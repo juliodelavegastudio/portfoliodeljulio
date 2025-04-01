@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <style>
+        :root {
+            --color-primary: #fd267a;
+            --color-white: #ffffff;
+            --color-black: #000000;
+            --color-gray: #7c8591;
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f0f2f4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tinder {
+            width: 375px;
+            height: 667px;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tinder-card {
+            width: 100%;
+            height: 100%;
+            background: var(--color-white);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 50% 100%;
+        }
+
+        .card-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            color: var(--color-white);
+        }
+
+        .card-info h3 {
+            font-size: 24px;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verified-badge {
+            color: #45a5f5;
+            font-size: 20px;
+        }
+
+        .card-info p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .tinder-buttons {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .tinder-button {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background: var(--color-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .tinder-button:hover {
+            transform: scale(1.1);
+        }
+
+        .tinder-button.nope {
+            color: #fd5068;
+        }
+
+        .tinder-button.like {
+            color: #1be4a1;
+        }
+
+        .tinder-button.superlike {
+            color: #45a5f5;
+        }
+
+        .emoji-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            font-size: 120px;
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.3s;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tinder">
+        <div class="tinder-card">
+            <img src="assets/images/Tindercards/1.jpg" alt="Profile photo" class="card-photo">
+            <div class="card-info">
+                <h3>Somesh <span class="verified-badge">✓</span> <span class="age">24</span></h3>
+                <p>Matchmaker</p>
+            </div>
+            <div class="emoji-overlay like">❤️</div>
+            <div class="emoji-overlay nope">❌</div>
+            <div class="emoji-overlay superlike">⭐</div>
+        </div>
+        <div class="tinder-buttons">
+            <button class="tinder-button nope">❌</button>
+            <button class="tinder-button superlike">⭐</button>
+            <button class="tinder-button like">❤️</button>
+        </div>
+    </div>
+    <script src="tinder.js"></script>
+</body>
+</html>

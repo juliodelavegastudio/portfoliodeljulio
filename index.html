@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Roussel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <header class="hero glass-container">
+        <h1 class="hero-title">JULOTHÈQUE</h1>
+        <nav class="hero-nav">
+            <a href="#projets" class="nav-link" data-section="projets">PROJECTS</a>
+            <a href="#animation" class="nav-link" data-section="animation"> 3D ANIMATION</a>
+            <a href="#bronze" class="nav-link" data-section="bronze">ARTISTIC LATHING</a>
+            <a href="#about" class="nav-link" data-section="about">ABOUT ME</a>
+        </nav>
+        <canvas id="3d-canvas" class="three-canvas"></canvas>
+    </header>
+
+    <!-- Projects Section -->
+    <!-- Supprimer toute la section Tinder -->
+    <section id="projets" class="section glass-container">
+        <h2 class="section-title">SWIPE PROJECTS</h2>
+        <div class="tinder-container">
+            <div class="tinder-cards">
+                <!-- Les cartes seront injectées ici par JavaScript -->
+            </div>
+            <div class="tinder-buttons">
+                <button class="tinder-button nope">
+                    <img src="/assets/images/Tindercards/Red_X.svg" alt="Dislike">
+                </button>
+                <button class="tinder-button like">
+                    <img src="/assets/images/Tindercards/like-emoji.svg" alt="Like">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Section -->
+    <section id="animation" class="section glass-container">
+        <h2 class="section-title">ANIMATION 3D</h2>
+        <p class="animation-description">
+            After a year in the Art & Design preparatory program, I discovered a passion for a new medium: 3D software. Self-taught, I learn to work with color, textures, light, movement, shapes, proportions, and illustration. I now have the compulsive eye of an observer on the world.<br><br>
+            My personal universe unfolds as I explore, with an artistic approach, subjects that intrigue, worry, amuse, or challenge me.
+        </p>
+        <div class="animation-grid">
+            <!-- Renders -->
+         
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/0046.png" alt="Render 2">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/CHESSPARTIE.png" alt="Chess Partie">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/RESTOECHEC.png" alt="Resto Echec">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/hangard.png" alt="Render">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/robot.png" alt="Render 2">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/Animation3D/RENDER/sorayamainthecity.png" alt="Untitled">
+            </div>
+        </div>
+
+        <!-- Section vidéos séparée -->
+        <div class="video-section">
+            <div class="animation-card video-card">
+                <video src="assets/images/Animation3D/VFX/LAFEVE.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="animation-card video-card">
+                <video src="assets/images/Animation3D/VFX/Sorayama copie.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bronze Section -->
+    <section id="bronze" class="section glass-container">
+        <h2 class="section-title">ARTISTIC LATHING</h2>
+        <p class="animation-description">
+            Artistic turning is a craft where one learns to machine or manually shape a rotating metal piece on a lathe, as well as various techniques in assembly, forging, and chiseling.
+            It is a rare craft focused on mastering curves, proportions, and profiles. It requires technical and scientific knowledge of various materials, as well as precision in execution. The mind and the hand.
+        </p>
+        <div class="animation-grid">
+            <div class="animation-card">
+                <img src="assets/images/TOURNAGE/tournage1.png" alt="Tournage 1">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/TOURNAGE/tournage2.png" alt="Tournage 2">
+            </div>
+            <div class="animation-card">
+                <img src="assets/images/TOURNAGE/tournage3.png" alt="Tournage 3">
+            </div>
+        </div>
+
+        <!-- Nouvelle section vidéos -->
+        <div class="video-section">
+            <div class="animation-card video-card">
+                <video src="assets/images/TOURNAGE/video2.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section glass-container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/images/PP.png" alt="Jules Roussel" class="profile-image">
+            </div>
+            <div class="about-text">
+                <p class="about-description">
+                    My name is Jules. I'm French, but I grew up in Germany, Brazil, and the Czech Republic.
+                </p>
+                <p class="about-description">
+                    Naturally curious, I love discovering new things and meeting inspiring people.
+                </p>
+                <p class="about-description">
+                    I have taught myself and by 2 years in Engineering school, various technologies, including programming, electronics, 3D animation, modeling, mapping, and artificial intelligence.
+                </p>
+                <p class="about-description">
+                    Yet, in constant search of exploration, a need of imagination and to stay connected with the rigor material reality require, I joined the Art Bronze Lathing program at École Boulle.
+                </p>
+                <p class="about-description">
+                    This discipline blends ingenuity and a sensitive interaction with metal, wood, plastic, through the art of precision machining.
+                </p>
+                <p class="about-description">
+                    My inspirations revolve around utopias, hope, colors, perception, emotional connections with objects, animism, and the transformation of digital interfaces.
+                </p>
+                <p class="about-description">
+                    I aspire to embody these ideals in my work, but I know I still have a journey of questioning and evolution ahead of me.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section glass-container">
+        <h2 class="section-title">CONTACT</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-images">
+                    <!-- Les images seront injectées dynamiquement -->
+                </div>
+                <div class="modal-description">
+                    <h2 class="modal-title"></h2>
+                    <div class="modal-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Après le language switch -->
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html><div class="side-collections liked-projects"></div>
+<div class="side-collections disliked-projects"></div>

@@ -1,0 +1,9 @@
+Capture%20d'%C3%A9cran%202024-11-07%20%C3%A0%2016.25.41.png:1 
+        
+        
+       Failed to load resource: net::ERR_FILE_NOT_FOUND
+script.js:118 DOM chargé, initialisation de Three.js...
+script.js:6 Initialisation de la scène...
+script.js:9 Uncaught ReferenceError: THREE is not defined
+    at init (script.js:9:5)
+    at HTMLDocument.<anonymous> (script.js:119:5)
